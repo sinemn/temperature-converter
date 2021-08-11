@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Temperature Converter</title>
+  </head>
+  <body>
+    <div class="temperature">
+      <div class="cont">
+        <div class="temperature__container">
+          <label for="celcius">Celcius</label>
+          <input
+            type="number"
+            name="celcius"
+            placeholder="100°C "
+            oninput="celciusToFahrenheit()"
+            id="celcius"
+          />
+        </div>
+        <div class="temperature__container">
+          <label for="fahrenheit">Fahrenheit</label>
+          <input
+            type="number"
+            name="fahrenheit"
+            placeholder="212°F "
+            oninput="fahrenheitToCelcius()"
+            id="fahrenheit"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>
